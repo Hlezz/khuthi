@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>You've Found My Secret ❤️</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#ffe6eb,#fff5f7);
+color:#444;
+line-height:1.6;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:20px;
+}
+
+.hero{
+text-align:center;
+padding:60px 20px;
+}
+
+.hero h1{
+font-size:3rem;
+color:#d6336c;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:1.2rem;
+max-width:700px;
+margin:auto;
+}
+
+.card{
+background:white;
+padding:25px;
+margin:20px 0;
+border-radius:20px;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.section-title{
+text-align:center;
+color:#d6336c;
+margin-bottom:20px;
+}
+
+.memory{
+padding:12px;
+margin:10px 0;
+background:#fff0f3;
+border-radius:10px;
+}
+
+.letter-button{
+width:100%;
+padding:18px;
+border:none;
+border-radius:12px;
+background:#d6336c;
+color:white;
+font-size:1rem;
+cursor:pointer;
+margin-top:10px;
+transition:0.3s;
+}
+
+.letter-button:hover{
+background:#b02559;
+}
+
+.letter{
+display:none;
+margin-top:15px;
+padding:15px;
+background:#fff5f7;
+border-radius:12px;
+animation:fadeIn .5s ease;
+}
+
+.secret-btn{
+display:block;
+margin:40px auto;
+padding:15px 25px;
+border:none;
+border-radius:30px;
+background:black;
+color:white;
+cursor:pointer;
+}
+
+.secret{
+display:none;
+text-align:center;
+padding:25px;
+margin-top:20px;
+background:#fff;
+border-radius:20px;
+}
+
+footer{
+text-align:center;
+padding:40px;
+color:#777;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(10px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<section class="hero">
+<h1>Hey Sunshine ❤️</h1>
+
+<p>
+If you're reading this, it means you've discovered a little secret I made just for you.
+</p>
+
+<br>
+
+<p>
+Life moves fast. Some days get busy. Some conversations get interrupted.
+So I wanted a place where my heart could wait for you.
+A place you can always return to whenever you need a reminder of how much you mean to me.
+</p>
+
+<br>
+
+<p>
+Love,<br>
+<b>Sihle ❤️</b>
+</p>
+</section>
+
+<div class="card">
+<h2 class="section-title">Things I Love About You</h2>
+
+<div class="memory">✨ Your beautiful eyes.</div>
+<div class="memory">✨ The way you manage to speak to my heart.</div>
+<div class="memory">✨ Your kindness and strength.</div>
+<div class="memory">✨ The way you believe in me.</div>
+<div class="memory">✨ How being with you feels like home.</div>
+</div>
+
+<div class="card">
+<h2 class="section-title">Open When... 💌</h2>
+
+<button class="letter-button" onclick="toggleLetter('sad')">
+💔 Open When You're Sad
+</button>
+
+<div id="sad" class="letter">
+Hey my love,<br><br>
+
+Whatever you're carrying today, don't carry it alone.
+
+You are stronger than you realise, more loved than you know, and more important to me than words could ever explain.
+
+Take a deep breath.
+
+I've got you. ❤️
+</div>
+
+<button class="letter-button" onclick="toggleLetter('miss')">
+🥺 Open When You Miss Me
+</button>
+
+<div id="miss" class="letter">
+Hi Sunshine,<br><br>
+
+If you're reading this because you miss me, know that I'm probably missing you too.
+
+Until I can hold your hand again, let this message stand in my place:
+
+I'm thinking about you. I'm grateful for you. And I can't wait to see you.
+
+❤️
+</div>
+
+<button class="letter-button" onclick="toggleLetter('confidence')">
+👑 Open When You Need Confidence
+</button>
+
+<div id="confidence" class="letter">
+Let me remind you who you are.<br><br>
+
+You are intelligent.<br>
+You are beautiful.<br>
+You are resilient.<br>
+You are capable.<br><br>
+
+Never let a difficult day convince you otherwise.
+
+I believe in you.
+</div>
+
+<button class="letter-button" onclick="toggleLetter('smile')">
+😂 Open When You Need To Smile
+</button>
+
+<div id="smile" class="letter">
+Important notice:<br><br>
+
+You stole my heart.
+
+Unfortunately you never returned it.
+
+Interest has accumulated.
+
+Repayment may be made in kisses.
+
+😏❤️
+</div>
+
+<button class="letter-button" onclick="toggleLetter('love')">
+❤️ Open When You Need A Reminder
+</button>
+
+<div id="love" class="letter">
+I choose you.<br><br>
+
+Not because I have to.<br>
+Not because life is always perfect.<br>
+Not because it's easy.<br><br>
+
+I choose you every single day.
+
+And if I had the chance to start all over again...
+
+I'd choose you all over again.
+
+Forever.
+
+❤️
+</div>
+</div>
+
+<button class="secret-btn" onclick="showSecret()">
+🔒 One More Secret
+</button>
+
+<div id="secret" class="secret">
+<h2>My Final Secret ❤️</h2>
+
+<p>
+Of all the things I have experienced in life,
+meeting you will always be one of my favourite things.
+</p>
+
+<br>
+
+<p>
+No matter where life takes us,
+you will always hold a special place in my heart.
+</p>
+
+<br>
+
+<p>
+❤️ Love, Sihle ❤️
+</p>
+</div>
+
+<footer>
+Made with love by Sihle ❤️
+</footer>
+
+</div>
+
+<script>
+function toggleLetter(id){
+const letter = document.getElementById(id);
+
+if(letter.style.display === "block"){
+letter.style.display = "none";
+}
+else{
+letter.style.display = "block";
+}
+}
+
+function showSecret(){
+document.getElementById("secret").style.display="block";
+window.location.href="#secret";
+}
+</script>
+
+</body>
+</html>
